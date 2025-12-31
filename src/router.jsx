@@ -18,4 +18,6 @@ export const router = createBrowserRouter([
       },
     ],
   },
-]);
+], {
+  basename: '/Violations/',
+});
