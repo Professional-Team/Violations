@@ -1,0 +1,86 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--white);
+}
+
+.navbar-custom {
+  background-color: var(--dark-gray) !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.navbar-brand-custom {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+  text-decoration: none;
+}
+
+.violations-title {
+  color: var(--sky-blue);
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.navbar-train-icon {
+  display: flex;
+  align-items: center;
+  color: var(--sky-blue);
+  margin-right: 0;
+}
+
+.main-content {
+  flex: 1;
+  padding: 2rem 1rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar-custom {
+    padding: 0.5rem 0;
+  }
+
+  .navbar-inner {
+    padding: 0.75rem;
+  }
+
+  .violations-title {
+    font-size: 1.25rem;
+  }
+
+  .navbar-train-icon {
+    font-size: 0.9rem;
+  }
+
+  .main-content {
+    padding: 1rem 0.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .violations-title {
+    font-size: 1rem;
+  }
+
+  .navbar-train-icon svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .main-content {
+    padding: 0.75rem 0.25rem;
+  }
+}
